@@ -1,0 +1,6 @@
+[book]
+authors = ["胡争辉"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Hu Zhenghui's mdBook"
