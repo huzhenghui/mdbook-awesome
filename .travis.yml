@@ -14,3 +14,15 @@ before_script:
 
 script:
   - mdbook build  && mdbook test
+
+deploy:
+  provider: pages
+  strategy: git
+  edge: true
+  cleanup: false
+  github-token: $TRAVIS-CI-GITHUB-TOKEN
+  local-dir: ./book
+  keep-history: false
+  on:
+    branch: master
+  target_branch: gh-pages
