@@ -20,7 +20,7 @@ deploy:
   strategy: git
   edge: true
   cleanup: false
-  github-token: $TRAVIS-CI-GITHUB-TOKEN
+  github-token: $TRAVIS_CI_GITHUB_TOKEN
   local-dir: ./book
   keep-history: false
   on:
